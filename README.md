@@ -9,6 +9,9 @@ gem 'globalize_actiontext'
 ```ruby
 class Page < ApplicationRecord
   translates :name
+  
+  accepts_nested_attributes_for :translations
+
   has_rich_text :content
 end
 ```
